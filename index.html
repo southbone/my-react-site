@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Southbone | Clean mind — clean code</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body class="dark-theme">
+
+  <div id="splash-logo">
+    <img src="images/logo.svg" alt="Logo" />
+  </div>
+
+  <!-- Main content -->
+  <main id="content" class="hidden">
+    <div class="main-centered-content">
+      <!-- Top bar -->
+      <header class="header-centered" style="margin-bottom: 0;">
+        <div class="top-buttons">
+          <button id="portfolio-btn">
+            <img src="images/briefcase.svg" alt="Portfolio" class="icon"/>
+          </button>
+          <button id="about-btn">
+            <img src="images/mark.svg" alt="About" class="icon" style="width: 20px; height: 20px;"/>
+          </button>
+          <div class="lang-wrapper">
+            <button id="lang-btn">
+              <img src="images/lang.svg" alt="Language Toggle" class="icon"/>
+            </button>
+            <div id="lang-menu" class="lang-menu hidden">
+              <button class="lang-option" data-lang="ru">
+                <img src="images/flags/ru.svg" alt="RU" width="12" height="8" />
+              </button>
+              <button class="lang-option" data-lang="en">
+                <img src="images/flags/eng.svg" alt="EN" width="12" height="8" />
+              </button>
+              <button class="lang-option" data-lang="es">
+                <img src="images/flags/es.svg" alt="ES" width="12" height="8" />
+              </button>
+            </div>
+          </div>
+          <button id="theme-btn">
+            <img src="images/light-dark.svg" alt="Toggle Theme" class="icon"/>
+          </button>
+        </div>
+
+        <div class="logo-nick" style="margin-top: 150px; margin-bottom: 0;">
+          <div class="logo">
+            <img src="images/logo.svg" alt="Logo" class="icon" id="main-logo"/>
+          </div>
+          <div class="nickname-cta">
+            <div class="nickname" id="nickname">
+              <a href="javascript:void(0)" id="nickname-link" draggable="false" ondragstart="return false;" style="text-decoration: none; color: inherit; cursor: pointer;">SOUTHBONE</a>
+            </div>
+            <div class="cta-container">
+              <a href="mailto:your@email.com" class="cta-button" data-i18n="cta">Let's Talk</a>
+              <a href="https://t.me/YOUR_USERNAME" class="cta-button" target="_blank">Telegram</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Slogan -->
+      <h1 class="slogan" data-slogan>...</h1>
+
+      <!-- Social buttons -->
+      <div class="links">
+          <a href="https://t.me/YOUR_BOT" target="_blank" class="social-btn">
+            <img src="images/tg.svg" alt="Telegram" class="icon" id="telegram-icon"/>
+            <span data-i18n="tg">Telegram</span>
+          </a>
+          <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank" class="social-btn">
+            <img src="images/linkedin.svg" alt="LinkedIn" class="icon" id="linkedin-icon"/>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://www.fiverr.com/YOUR_FIVERR" target="_blank" class="social-btn">
+            <img src="images/fiver.svg" alt="Fiverr" class="icon" id="fiverr-icon"/>
+            <span>Fiverr</span>
+          </a>
+          <a href="https://www.upwork.com/freelancers/YOUR_UPWORK" target="_blank" class="social-btn">
+            <img src="images/upwork.svg" alt="Upwork" class="icon" id="upwork-icon"/>
+            <span>Upwork</span>
+          </a>
+        </div>
+    </div>
+  </main>
+
+  <!-- Modal -->
+  <div id="about-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-about">&times;</span>
+      <p data-i18n="about">Hi, I'm Konstantin — fullstack dev. Bots, automation, clean code.</p>
+    </div>
+  </div>
+
+  <!-- Модалка с проектами -->
+  <div id="portfolio-modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="close-portfolio">&times;</span>
+      <h2>Проекты</h2>
+      <div class="project-list">
+        <div class="project-item">Telegram Bot — AIOGram + API</div>
+        <div class="project-item">Сайт-визитка — HTML + CSS</div>
+        <div class="project-item">Автоматизация — скрипты, парсинг</div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="site-footer">© 2025 SOUTHBONE :)</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
